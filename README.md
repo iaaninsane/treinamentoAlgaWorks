@@ -1,3 +1,3 @@
 # treinamentoAlgaWorks
 
-Repositório para armazenar exercícios feitosa na plataforma AlgaWorks
+Repositório para armazenar exercícios feitos na plataforma AlgaWorks

@@ -3,6 +3,7 @@ public class ContratoTrabalho {
     private Funcionario funcionario;
     private Double valorHoraNormal;
     private Double valorHoraExtra;
+    public static final Double ADICIONAL_DEPENDENTE = 1.1;
 
     public ContratoTrabalho(Funcionario funcionario, Double valorHoraNormal, Double valorHoraExtra) {
         this.funcionario = funcionario;

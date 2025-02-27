@@ -8,7 +8,7 @@ public class FolhaDePagamento {
         Double salarioCalculado = contratoTrabalho.getValorHoraNormal() * quantidadeHoraNormal +
                 contratoTrabalho.getValorHoraExtra() * quantidadeHoraExtra;
         if(contratoTrabalho.possuiAdicionalParaFilhos()){
-            salarioCalculado = salarioCalculado + (salarioCalculado*10/100);
+            salarioCalculado = salarioCalculado * ContratoTrabalho.ADICIONAL_DEPENDENTE;
         }
         return salarioCalculado;
     }

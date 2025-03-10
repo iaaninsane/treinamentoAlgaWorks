@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class FolhaDePagamento {
 
     private int quantidadeHoraNormal ;
@@ -10,6 +12,7 @@ public class FolhaDePagamento {
         if(contratoTrabalho.possuiAdicionalParaFilhos()){
             salarioCalculado = salarioCalculado * ContratoTrabalho.ADICIONAL_DEPENDENTE;
         }
+        Objects.requireNonNull(contratoTrabalho, "não pode ser nulo");
         return salarioCalculado;
     }
 }

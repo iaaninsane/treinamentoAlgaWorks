@@ -1,12 +1,14 @@
-public abstract class VericuloAutomotor implements BemSeguravel {
+package model;
+
+public abstract class VeiculoAutomotor implements BemSeguravel {
 
     private String modelo;
-    private double valormercado;
+    private double valorMercado;
     private int anoFabricacao;
 
-    public VericuloAutomotor(String modelo, double valormercado, int anoFabricacao) {
+    public VeiculoAutomotor(String modelo, double valormercado, int anoFabricacao) {
         this.modelo = modelo;
-        this.valormercado = valormercado;
+        this.valorMercado = valormercado;
         this.anoFabricacao = anoFabricacao;
     }
 
@@ -18,12 +20,12 @@ public abstract class VericuloAutomotor implements BemSeguravel {
         this.modelo = modelo;
     }
 
-    public double getValormercado() {
-        return valormercado;
+    public double getValorMercado() {
+        return valorMercado;
     }
 
-    public void setValormercado(double valormercado) {
-        this.valormercado = valormercado;
+    public void setValorMercado(double valorMercado) {
+        this.valorMercado = valorMercado;
     }
 
     public int getAnoFabricacao() {

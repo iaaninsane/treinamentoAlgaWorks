@@ -1,3 +1,7 @@
+package services;
+
+import model.BemSeguravel;
+
 public class ServicoPropostaSeguro {
 
     public void emitir(BemSeguravel bem){

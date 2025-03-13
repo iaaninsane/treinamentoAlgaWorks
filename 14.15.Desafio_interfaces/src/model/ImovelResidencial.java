@@ -1,3 +1,5 @@
+package model;
+
 public class ImovelResidencial implements BemSeguravel {
 
     public static final double TAXA_VALOR_MERCADO = 0.001;
@@ -29,7 +31,7 @@ public class ImovelResidencial implements BemSeguravel {
 
     @Override
     public double calcularValorPremio() {
-        return (valorMercado * TAXA_VALOR_MERCADO) + (TAXA_AREA_CONSTRUIDA * areaConstruida);
+        return (getValorMercado() * TAXA_VALOR_MERCADO) + (TAXA_AREA_CONSTRUIDA * getAreaConstruida());
     }
 
     @Override

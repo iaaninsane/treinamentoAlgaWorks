@@ -11,7 +11,6 @@ public class Main {
         BemSeguravel imovel = new ImovelResidencial(440000, 100);
 
         servicoProstaSeguro.emitir(imovel);
-
-
+        
     }
 }
